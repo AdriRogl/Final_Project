@@ -1,0 +1,87 @@
+.register-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.register-header {
+  margin-bottom: 1rem;
+}
+
+.register-content {
+  margin-bottom: 2rem;
+}
+
+.register-content p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.register-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.register-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.register-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.register-form-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 60%;
+}
+
+.register-form-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.register-form-fields label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.register-form-fields input {
+  margin-left: 1rem;
+}
+
+.register-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.register-form-button {
+  margin-left: 1rem;
+}
+
+.h1 {
+}

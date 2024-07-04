@@ -1,0 +1,76 @@
+/* App.css */
+
+/* Estilos para el encabezado */
+.header {
+  display: flex; /* Añadido display flex para usar justify-content */
+  justify-content: flex-end; /* Alinear elementos a la derecha */
+  align-items: center; /* Centrar verticalmente */
+  color: white;
+  padding: 10px;
+}
+
+.content-box {
+  width: 75%;
+  height: 70vh;
+  margin: auto;
+  background-color: #b3b7ec;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: auto; /* Agrega scroll si el contenido es demasiado grande */
+  margin-left: 150px;
+}
+
+.content-box h1 {
+  color: aliceblue;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.content-box p {
+  color: aliceblue;
+  margin-top: 70px;
+  font-size: 45px; /* Ajusta el tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.content-button {
+  width: 300px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.iniciar-sesion,
+.content-button {
+  background-color: beige;
+  color: rgb(10, 10, 10);
+  border-radius: 20px; /* Ajusta el radio para hacer las puntas muy curvadas */
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-color: azure;
+}
+
+.conocenos {
+  background-color: #d8daf0;
+  color: rgb(10, 10, 10);
+  border-radius: 20px; /* Ajusta el radio para hacer las puntas muy curvadas */
+  padding: 10px 20px;
+  border-color: azure;
+}
+
+.contactanos {
+  background-color: #d8daf0;
+  color: rgb(10, 10, 10);
+  border-radius: 20px; /* Ajusta el radio para hacer las puntas muy curvadas */
+  border-color: azure;
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+.conocenos,
+.contactanos,
+.iniciar-sesion {
+  font-weight: bold; /* Aplicar negrita */
+  font-size: 16px; /* Aumentar tamaño de fuente */
+}
