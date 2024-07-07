@@ -3,15 +3,17 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e5dde6;
-  background-image: url("https://dbdzm869oupei.cloudfront.net/img/sticker/preview/48814.png"); /* Ruta de la imagen de la flor */
-  background-size: cover; /* Ajustar tamaño de la imagen */
-  background-position: right center; /* Posición de la imagen (derecha centrada) */
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100px;
+  z-index: -1;
+  background-image: url("./public/Images/rosas.png");
+  background-repeat: no-repeat;
+  background-size: 720px;
+  background-position: right center;
 }
 
 /* Estilos para el resto de los elementos */
@@ -26,6 +28,7 @@ body {
     #f8f9fa 46%,
     #d8daf0 66%
   );
+
 }
 
 .container {

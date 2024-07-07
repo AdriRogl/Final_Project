@@ -7,6 +7,7 @@
   align-items: center; /* Centrar verticalmente */
   color: white;
   padding: 10px;
+  
 }
 
 .content-box {
@@ -19,12 +20,14 @@
   text-align: center;
   overflow: auto; /* Agrega scroll si el contenido es demasiado grande */
   margin-left: 150px;
+  
 }
 
 .content-box h1 {
   color: aliceblue;
   margin-bottom: 10px;
   font-size: 50px;
+  
 }
 
 .content-box p {
@@ -36,9 +39,10 @@
 
 .content-button {
   width: 300px;
-  height: 70px;
+  height: 60px;
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .iniciar-sesion,
