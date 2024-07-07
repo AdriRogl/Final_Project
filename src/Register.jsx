@@ -16,8 +16,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes manejar el envío del formulario
-    console.log(formData);
+    console.log(formData); // Manejar el envío del formulario aquí
   };
 
   const handleCancel = () => {
@@ -39,11 +38,9 @@ const Register = () => {
           Con PeacePals, no solo encuentras entretenimiento, sino también una
           herramienta poderosa para mejorar tu bienestar emocional y mental.
         </p>
-        <img src="./Images/hug.jpg" className="register-image" />
+        <img src="./Images/hug.jpg" alt="Hug" className="register-image" />
       </div>
       <div className="register-form-container">
-        <button className="register-button">Iniciar Sesión</button>
-        <button className="register-button"> Registro </button>
         <form className="register-form" onSubmit={handleSubmit}>
           <label>
             Nombre o Nickname:
