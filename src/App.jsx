@@ -6,6 +6,8 @@ import {
   useNavigate,
 } from "react-router-dom";
 import Register from "./Register";
+import Login from "./Login";
+import Diary from "./Diary";
 import "./App.css";
 
 const App = () => {
@@ -15,13 +17,19 @@ const App = () => {
     navigate("/register");
   };
 
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
+
   return (
     <div className="container">
       <header className="header">
         <nav className="menu">
           <button className="conocenos">CONÓCENOS</button>
           <button className="contactanos">CONTÁCTANOS</button>
-          <button className="iniciar-sesion">INICIAR SESIÓN</button>
+          <button className="iniciar-sesion" onClick={handleLoginClick}>
+            INICIAR SESIÓN
+          </button>
         </nav>
       </header>
       <Routes>
@@ -45,6 +53,8 @@ const App = () => {
           }
         />
         <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/diary" element={<Diary />} />
       </Routes>
     </div>
   );
