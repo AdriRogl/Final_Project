@@ -14,7 +14,7 @@ const Diary = () => {
   const handleSubmit = () => {
     if (userInput.trim() !== "") {
       const response = generateChatResponse(userInput);
-      setChatHistory([...chatHistory, { user: userInput, bot: response }]);
+      setChatHistory([...chatHistory, { user: userInput }, { bot: response }]);
       setUserInput("");
     }
   };
@@ -24,6 +24,7 @@ const Diary = () => {
   };
 
   const generateChatResponse = (userInput) => {
+    const lowercaseInput = userInput.toLowerCase();
     // Se implementa la lógica para generar la respuesta automática
     // Usamos un condicional para determinar la respuesta de parte del chat
     if (lowercaseInput.includes("hello")) {
@@ -47,8 +48,7 @@ const Diary = () => {
             className="journal-image"
           />
           <textarea
-            placeholder="En este espacio puedes colocar lo que
-            quieras y puedas verlo todo el tiempo"
+            placeholder="En este espacio puedes colocar la frase que más te inspira"
             className="journal-textarea"
           ></textarea>
         </div>
