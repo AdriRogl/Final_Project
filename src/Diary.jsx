@@ -42,7 +42,7 @@ const Diary = () => {
       <div className="left-section">
         <div className="journal-box">
           <img
-            src="./Images/diary.jpeg"
+            src="./Images/diario (2).jpg"
             alt="Diario"
             className="journal-image"
           />
@@ -53,7 +53,7 @@ const Diary = () => {
           ></textarea>
         </div>
         <div className="game-box">
-          <img src="./Images/Game.jpeg" alt="Juego" className="game-image" />
+          <img src="./Images/cards.jpg" alt="Juego" className="game-image" />
         </div>
       </div>
       <div className="center-section">

@@ -14,7 +14,7 @@
   width: 75%;
   height: 70vh;
   margin: auto;
-  background-color: #b3b7ec;
+  background-color: #888dd7;
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -26,14 +26,16 @@
 .content-box h1 {
   color: aliceblue;
   margin-bottom: 10px;
-  font-size: 50px;
+  font-size: 275%;
   
 }
 
 .content-box p {
   color: aliceblue;
   margin-top: 70px;
-  font-size: 45px; /* Ajusta el tamaño del texto */
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 30px; /* Ajusta el tamaño del texto */
   line-height: 1.5; /* Espaciado entre líneas */
 }
 
