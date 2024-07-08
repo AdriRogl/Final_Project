@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   height: 100px;
   z-index: -1;
-  background-image: url("./public/Images/lavanda-inicio.png.png");
+  background-image: url("./public/Images/lavanda-inicio.png");
   background-repeat: no-repeat;
   background-size: 720px;
   background-position: right center;
