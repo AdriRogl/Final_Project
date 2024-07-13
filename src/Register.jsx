@@ -30,15 +30,20 @@ const Register = () => {
 
   return (
     <div className="register-container">
-      <header className="register-header">
-        <h1>Registro</h1>
-      </header>
+      
       <div className="register-content">
-        <p>
-          Con PeacePals, no solo encuentras entretenimiento, sino también una
-          herramienta poderosa para mejorar tu bienestar emocional y mental.
-        </p>
-        <img src="./Images/hug.jpg" alt="Hug" className="register-image" />
+        <header className="register-header">
+          <h1>Registro</h1>
+        </header>
+        <div className="parrafo">
+          <p>
+            Con PeacePals, no solo encuentras entretenimiento, sino también una
+            herramienta poderosa para mejorar tu bienestar emocional y mental.
+          </p>
+        </div>
+        <div className="imagen">
+         <img src="./Images/reg.jpg" alt="Hug" className="register-image" />
+        </div>
       </div>
       <div className="register-form-container">
         <form className="register-form" onSubmit={handleSubmit}>

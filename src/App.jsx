@@ -8,7 +8,9 @@ import {
 import Register from "./Register";
 import Login from "./Login";
 import Diary from "./Diary";
+
 import "./App.css";
+
 
 const App = () => {
   const navigate = useNavigate();
