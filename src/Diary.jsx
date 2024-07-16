@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./diary.css";
 
 const Diary = () => {
+  const navigate = useNavigate();
   const [userInput, setUserInput] = useState("");
   const [chatHistory, setChatHistory] = useState([]);
   const [selectedEmotion, setSelectedEmotion] = useState(null);
@@ -21,6 +23,10 @@ const Diary = () => {
 
   const handleEmotion = (emotion) => {
     setSelectedEmotion(emotion);
+  };
+
+  const handleGameClick = () => {
+    navigate("/game");
   };
 
   const generateChatResponse = (userInput) => {
@@ -53,7 +59,11 @@ const Diary = () => {
           ></textarea>
         </div>
         <div className="game-box">
-          <img src="./Images/cards.jpg" alt="Juego" className="game-image" />
+          <img
+            src="./Images/cards.jpg"
+            className="game-image"
+            onClick={handleGameClick}
+          />
         </div>
       </div>
       <div className="center-section">

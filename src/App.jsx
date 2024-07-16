@@ -8,9 +8,9 @@ import {
 import Register from "./Register";
 import Login from "./Login";
 import Diary from "./Diary";
+import Game from "./Game";
 
 import "./App.css";
-
 
 const App = () => {
   const navigate = useNavigate();
@@ -54,9 +54,10 @@ const App = () => {
             </div>
           }
         />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/diary" element={<Diary />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Diary" element={<Diary />} />
+        <Route path="/Game" element={<Game />} />
       </Routes>
     </div>
   );

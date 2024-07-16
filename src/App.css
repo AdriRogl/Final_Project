@@ -7,7 +7,6 @@
   align-items: center; /* Centrar verticalmente */
   color: white;
   padding: 10px;
-  
 }
 
 .content-box {
@@ -20,18 +19,16 @@
   text-align: center;
   overflow: auto; /* Agrega scroll si el contenido es demasiado grande */
   margin-left: 150px;
-  
 }
 
 .content-box h1 {
-  color: aliceblue;
+  color: black;
   margin-bottom: 10px;
   font-size: 275%;
-  
 }
 
 .content-box p {
-  color: aliceblue;
+  color: black;
   margin-top: 70px;
   margin-left: 15px;
   margin-right: 15px;
