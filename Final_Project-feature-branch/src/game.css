@@ -1,0 +1,80 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #9e71c4;
+}
+
+#gameContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  width: 90%;
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+
+.card {
+  height: 90px;
+  background-color: #c2f0d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: transparent;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.card.revealed,
+.card.matched {
+  color: #444;
+  transform: scale(1.1);
+}
+
+#invitation {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  color: #d81159;
+}
+
+.confetti {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background-color: #1d8348;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+
+@keyframes confetti-animation {
+  0% {
+    transform: translateY(-100vh);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+#timer {
+  font-size: 24px;
+  color: #d81159;
+  margin-bottom: 20px;
+}
+.reset-button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #a889d3;
+ color: #0c0b0c;
+}

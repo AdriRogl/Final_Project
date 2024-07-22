@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e5dde6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  z-index: -1;
+  background-image: url("./public/Images/lavanda-inicio.png");
+  background-repeat: no-repeat;
+  background-size: 720px;
+  background-position: right center;
+}
+
+/* Estilos para el resto de los elementos */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to left,
+    #f8f9fa 73%,
+    #f8f9fa 46%,
+    #d8daf0 66%
+  );
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.menu-container {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around; /* Cambié el justify-content a space-around para distribuir los botones */
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
