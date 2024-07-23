@@ -9,11 +9,16 @@ import Register from "./Register";
 import Login from "./Login";
 import Diary from "./Diary";
 import Game from "./Game";
-
+import Fpassword from "./Fpassword";
+import AboutUs from "./AboutUs";
 import "./App.css";
 
 const App = () => {
   const navigate = useNavigate();
+
+  const handleHomeClick = () => {
+    navigate("/"); // Redirige a la página principal
+  };
 
   const handleRegisterClick = () => {
     navigate("/register");
@@ -22,13 +27,20 @@ const App = () => {
   const handleLoginClick = () => {
     navigate("/login");
   };
+  const handleAboutUsClick = () => {
+    navigate("/aboutus");
+  };
 
   return (
     <div className="container">
       <header className="header">
         <nav className="menu">
-          <button className="conocenos">CONÓCENOS</button>
-          <button className="contactanos">CONTÁCTANOS</button>
+          <button className="inicio" onClick={handleHomeClick}>
+            INICIO
+          </button>
+          <button className="conocenos" onClick={handleAboutUsClick}>
+            CONÓCENOS
+          </button>
           <button className="iniciar-sesion" onClick={handleLoginClick}>
             INICIAR SESIÓN
           </button>
@@ -54,10 +66,13 @@ const App = () => {
             </div>
           }
         />
+        <Route path="/" element={<App />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Diary" element={<Diary />} />
         <Route path="/Game" element={<Game />} />
+        <Route path="/Fpassword" element={<Fpassword />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
       </Routes>
     </div>
   );
