@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Estilos 
+para el contenedor principal de registro */
+.register-container {
+  width: 75%;
+  height: 125vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #888dd7;/* Color de fondo más claro */
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+.register-content{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+/* Estilos para el contenedor del formulario de registro */
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.register-header{
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center left;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estilos para la imagen de registro */
+.register-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Ajusta el radio de las esquinas de la imagen */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  
+  margin-left: 20px; /* Espacio entre la imagen y el contenedor de registro */
+}
+
+.register-form-container {
+  background-color: #c2f0d4; /* Fondo blanco */
+  padding: 30px; /* Espaciado interno */
+  border-radius: 30px; /* Borde redondeado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  width: 80%; /* Ancho del contenedor */
+  max-width: 600px; /* Ancho máximo */
+}
+
+.register-form-buttons {
+  display: flex;
+  justify-content: space-between; /* Espaciado entre botones */
+  margin-top: 1rem; /* Margen superior */
+}
+
+.register-form-button {
+  width: 48%; /* Ancho del botón */
+  height: 3rem; /* Altura del botón */
+  font-size: 1rem; /* Tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+  color: #ffffff; /* Color del texto */
+  background-color: #bb9fc2; /* Color de fondo azul */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cursor de tipo puntero */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.register-form-button:hover {
+  background-color: #a580a7; /* Cambio de color de fondo al pasar el ratón */
+}
+.parrafo{
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  text-align: center;
+
+  
+}
