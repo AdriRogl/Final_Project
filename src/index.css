@@ -28,15 +28,22 @@ body {
     #f8f9fa 46%,
     #d8daf0 66%
   );
-
+  background-color: #e5dde6; /* Fondo de respaldo */
 }
 
+/* Contenedor principal */
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  background-image: url("./public/Images/rosas.png");
+  background-repeat: no-repeat;
+  background-size: 720px; /* Tamaño específico para la imagen */
+  background-position: right center;
+  background-attachment: fixed; /* Fija la imagen en el fondo */
 }
 
+/* Estilos para el menú */
 .menu-container {
   background-color: #f8f9fa;
   padding: 10px 0;
@@ -48,9 +55,29 @@ body {
 
 .menu {
   display: flex;
-  justify-content: space-around; /* Cambié el justify-content a space-around para distribuir los botones */
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px; /* Espacio entre los botones */
+  padding: 0 20px;
 }
 
+.menu button {
+  background-color: #d8daf0;
+  color: rgb(10, 10, 10);
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #b3b7ec;
+}
+
+/* Estilos para el contenido */
 .content {
   flex: 1;
   display: flex;
@@ -58,4 +85,172 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+/* Estilos para el cuadro de contenido */
+.content-box {
+  width: 75%;
+  max-width: 1200px; /* Ancho máximo para pantallas grandes */
+  height: auto; /* Ajustar altura automáticamente */
+  background-color: #b3b7ec;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  overflow: hidden; /* Oculta el desbordamiento */
+  box-sizing: border-box; /* Asegura que padding no afecte el ancho total */
+  position: relative;
+  z-index: 1; /* Asegura que el contenido se muestre sobre la imagen de fondo */
+}
+
+/* Asegurarse de que el contenido se mantenga centrado */
+.content-box h1 {
+  color: aliceblue;
+  margin: 0; /* Eliminar el margen para evitar desbordamiento */
+  font-size: 50px;
+  word-wrap: break-word; /* Ajusta el texto para evitar el desbordamiento */
+}
+
+.content-box p {
+  color: aliceblue;
+  margin: 20px 0 0 0; /* Eliminar margen superior para evitar desbordamiento */
+  font-size: 20px;
+  line-height: 1.5;
+  word-wrap: break-word; /* Ajusta el texto para evitar el desbordamiento */
+}
+
+.content-button {
+  background-color: beige;
+  color: rgb(10, 10, 10);
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content-button:hover {
+  background-color: #d8daf0;
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 1200px) {
+  .content-box {
+    width: 85%;
+  }
+
+  .content-box h1 {
+    font-size: 40px;
+  }
+
+  .content-box p {
+    font-size: 18px;
+  }
+
+  .content-button {
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-box {
+    width: 90%;
+  }
+
+  .content-box h1 {
+    font-size: 35px;
+  }
+
+  .content-box p {
+    font-size: 16px;
+  }
+
+  .content-button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menu button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .content-box {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .content-box h1 {
+    font-size: 30px;
+  }
+
+  .content-box p {
+    font-size: 15px;
+  }
+
+  .content-button {
+    width: 180px;
+    height: 35px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .content-box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content-box h1 {
+    font-size: 25px;
+  }
+
+  .content-box p {
+    font-size: 14px;
+  }
+
+  .content-button {
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu button {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .content-box h1 {
+    font-size: 20px;
+  }
+
+  .content-box p {
+    font-size: 12px;
+  }
+
+  .content-button {
+    width: 120px;
+    height: 25px;
+    font-size: 12px;
+  }
 }

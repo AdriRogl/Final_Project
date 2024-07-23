@@ -1,26 +1,30 @@
+/* Estilos generales */
 .diary-container {
   display: flex;
-  height: 100vh;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+  height: auto; /* Permite que el contenedor se ajuste a la altura del contenido */
 }
 
 .left-section,
 .right-section {
-  width: 25%;
+  width: 100%;
   background-color: #f1f1f1;
   padding: 20px;
 }
 
 .center-section {
-  width: 50%;
+  width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Ajustes para secciones */
 .journal-box,
 .game-box {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .journal-image,
@@ -31,15 +35,7 @@
   margin-left: 45px;
 }
 
-.journal-textarea {
-  width: 100%;
-  height: 150px;
-  resize: none;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-}
-
+.journal-textarea,
 .user-input {
   width: 100%;
   height: 150px;
@@ -64,29 +60,24 @@
   margin-bottom: 10px;
 }
 
-.response-box {
+.response-box,
+.calendar-box,
+.emotion-box {
   background-color: #f1f1f1;
   padding: 10px;
   border-radius: 5px;
   width: 100%;
-}
-
-.calendar-box {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 5px;
   margin-bottom: 20px;
 }
 
 .emotion-box {
   background-color: #fff;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 .emotion-icons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Permite que los íconos se ajusten en pantallas pequeñas */
 }
 
 .emotion-icons img {
@@ -96,8 +87,46 @@
   cursor: pointer;
 }
 
-.selected-emotion {
-  border: 2px solid #4caf50;
+/* Media Queries para hacer la página responsive */
+@media (min-width: 768px) {
+  .left-section,
+  .right-section {
+    width: 25%;
+  }
+
+  .center-section {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .left-section,
+  .right-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .center-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .submit-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .emotion-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+  }
+
+  .journal-textarea,
+  .user-input {
+    height: 120px;
+  }
 }
 
 .emotion-calendar {

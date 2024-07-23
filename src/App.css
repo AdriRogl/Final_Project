@@ -1,17 +1,69 @@
-/* App.css */
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 /* Estilos para el encabezado */
 .header {
-  display: flex; /* Añadido display flex para usar justify-content */
-  justify-content: flex-end; /* Alinear elementos a la derecha */
-  align-items: center; /* Centrar verticalmente */
-  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   padding: 10px;
 }
 
+/* Estilos para el menú */
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+.menu button {
+  font-size: 16px;
+}
+
+.iniciar-sesion {
+  background-color: #bb9fc2; /* Color igual al de Registrar */
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.conocenos,
+.contactanos {
+  background-color: #d8daf0;
+  color: rgb(10, 10, 10);
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.iniciar-sesion:hover,
+.conocenos:hover,
+.contactanos:hover {
+  background-color: #a580a7; /* Color de hover para Iniciar sesión */
+}
+
+/* Estilos para la caja de contenido */
 .content-box {
   width: 75%;
-  height: 70vh;
+  max-width: 1200px; /* Limitar el ancho máximo */
+  height: auto;
   margin: auto;
   background-color: #888dd7;
   border-radius: 50px;
@@ -37,43 +89,140 @@
 }
 
 .content-button {
-  width: 300px;
-  height: 60px;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.iniciar-sesion,
-.content-button {
   background-color: beige;
   color: rgb(10, 10, 10);
-  border-radius: 20px; /* Ajusta el radio para hacer las puntas muy curvadas */
+  border-radius: 20px;
   padding: 10px 20px;
-  margin-left: 10px;
-  border-color: azure;
+  margin-top: 20px;
+  font-size: 2.5vw; /* Tamaño relativo */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  max-width: 90%; /* Limitar el ancho máximo del botón */
 }
 
-.conocenos {
+.content-button:hover {
   background-color: #d8daf0;
-  color: rgb(10, 10, 10);
-  border-radius: 20px; /* Ajusta el radio para hacer las puntas muy curvadas */
-  padding: 10px 20px;
-  border-color: azure;
 }
 
-.contactanos {
-  background-color: #d8daf0;
-  color: rgb(10, 10, 10);
-  border-radius: 20px; /* Ajusta el radio para hacer las puntas muy curvadas */
-  border-color: azure;
-  padding: 10px 20px;
-  margin-left: 10px;
+/* Media Queries para hacer la página responsive */
+@media (max-width: 1200px) {
+  .content-box {
+    width: 85%;
+  }
+
+  .content-box h1 {
+    font-size: 5vw;
+  }
+
+  .content-box p {
+    font-size: 3vw;
+  }
+
+  .content-button {
+    font-size: 3vw;
+  }
 }
 
-.conocenos,
-.contactanos,
-.iniciar-sesion {
-  font-weight: bold; /* Aplicar negrita */
-  font-size: 16px; /* Aumentar tamaño de fuente */
+@media (max-width: 992px) {
+  .content-box {
+    width: 90%;
+  }
+
+  .content-box h1 {
+    font-size: 4.5vw;
+  }
+
+  .content-box p {
+    font-size: 2.5vw;
+  }
+
+  .content-button {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .menu button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .content-box {
+    width: 95%;
+    height: auto;
+    padding: 4% 5%;
+  }
+
+  .content-box h1 {
+    font-size: 6vw;
+  }
+
+  .content-box p {
+    font-size: 4vw;
+  }
+
+  .content-button {
+    width: 50%;
+    height: auto;
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    gap: 5px;
+  }
+
+  .menu button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .content-box {
+    width: 100%;
+    padding: 5% 5%;
+  }
+
+  .content-box h1 {
+    font-size: 8vw;
+  }
+
+  .content-box p {
+    font-size: 5vw;
+  }
+
+  .content-button {
+    width: 100%;
+    height: auto;
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu button {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .content-box h1 {
+    font-size: 12vw;
+  }
+
+  .content-box p {
+    font-size: 7vw;
+  }
+
+  .content-button {
+    height: auto;
+    font-size: 6vw;
+  }
 }

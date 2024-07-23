@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Estilos 
 para el contenedor principal de registro */
@@ -22,9 +23,68 @@ para el contenedor principal de registro */
   align-items: center;
 
   
+=======
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Estilos para el contenedor del formulario de registro */
+/* Estilos para el contenedor principal de registro */
+.register-container {
+  width: 95%;
+  min-height: 125vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #e5dde6;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+>>>>>>> Stashed changes
+}
+
+/* Estilos para el texto, imagen y formulario */
+.register-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.register-text {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.register-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0; /* Espacio entre la imagen y el formulario */
+}
+
+.register-form-container {
+  background-color: #f5eef9;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Estilos para el formulario de registro */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .register-form input {
   width: 100%;
   padding: 10px;
@@ -66,25 +126,99 @@ para el contenedor principal de registro */
 
 .register-form-buttons {
   display: flex;
-  justify-content: space-between; /* Espaciado entre botones */
-  margin-top: 1rem; /* Margen superior */
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .register-form-button {
-  width: 48%; /* Ancho del botón */
-  height: 3rem; /* Altura del botón */
-  font-size: 1rem; /* Tamaño de la fuente */
-  font-weight: bold; /* Negrita */
-  color: #ffffff; /* Color del texto */
-  background-color: #bb9fc2; /* Color de fondo azul */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Borde redondeado */
-  cursor: pointer; /* Cursor de tipo puntero */
-  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  width: 48%;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #bb9fc2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .register-form-button:hover {
-  background-color: #a580a7; /* Cambio de color de fondo al pasar el ratón */
+  background-color: #a580a7;
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 1200px) {
+  .register-container {
+    width: 90%;
+  }
+
+  .register-form-container {
+    width: 90%;
+  }
+
+  .register-form-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .register-container {
+    width: 90%;
+  }
+
+  .register-form-container {
+    width: 95%;
+  }
+
+  .register-form-button {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    width: 100%;
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .register-form-container {
+    width: 100%;
+  }
+
+  .register-form-button {
+    width: 45%;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .register-container {
+    padding: 10px;
+  }
+
+  .register-form-container {
+    padding: 20px;
+  }
+
+  .register-form-button {
+    width: 100%;
+    height: 2rem;
+    font-size: 0.75rem;
+  }
+
+  .register-image {
+    margin: 1rem 0; /* Espacio entre la imagen y el formulario */
+  }
+}
+
+@media (max-width: 360px) {
+  .register-form-button {
+    height: 1.75rem;
+    font-size: 0.7rem;
+  }
 }
 .parrafo{
   display: flex;

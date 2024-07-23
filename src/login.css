@@ -21,6 +21,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   color: #333;
+  text-align: center; /* Alineado centrado */
 }
 
 .login-image {
@@ -56,6 +57,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
+  width: 100%; /* Asegura que el input ocupe todo el ancho disponible */
 }
 
 .login-button {
@@ -99,4 +101,83 @@
 
 .forgot-password:hover {
   text-decoration: underline;
+}
+
+/* Media Queries para hacer el formulario responsive */
+
+@media (max-width: 768px) {
+  .login-header h1 {
+    font-size: 2rem;
+  }
+
+  .login-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .login-form {
+    padding: 1.5rem;
+  }
+
+  .login-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .login-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .login-form {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .login-button {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .login-options label {
+    font-size: 0.8rem;
+  }
+
+  .forgot-password {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .login-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .login-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .login-form {
+    padding: 0.8rem;
+  }
+
+  .login-button {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .login-options label {
+    font-size: 0.7rem;
+  }
+
+  .forgot-password {
+    font-size: 0.7rem;
+  }
 }
