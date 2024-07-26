@@ -26,6 +26,10 @@ const Login = () => {
     navigate("/diary");
   };
 
+  const handleCancel = () => {
+    navigate(-1); // Navegar hacia atrás en el historial
+  };
+
   return (
     <div className="login-container">
       <header className="login-header">
@@ -58,6 +62,9 @@ const Login = () => {
         <button type="submit" className="login-button">
           Iniciar sesión
         </button>
+        <button type="button" className="login-button" onClick={handleCancel}>
+          Cancelar
+        </button>
         <div className="login-options">
           <label>
             <input
@@ -68,7 +75,7 @@ const Login = () => {
             />
             Recordarme
           </label>
-          <Link to="/forgot-password" className="forgot-password">
+          <Link to="/Fpassword" className="Fpassword">
             ¿Olvidaste tu contraseña?
           </Link>
         </div>
