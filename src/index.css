@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   height: 100px;
   z-index: -1;
-  background-image: url("./public/Images/lavanda-inicio.png");
+  background-image: url("./public/Images/loto.jpeg");
   background-repeat: no-repeat;
   background-size: 720px;
   background-position: right center;
@@ -28,7 +28,6 @@ body {
     #f8f9fa 46%,
     #d8daf0 66%
   );
-
 }
 
 .container {

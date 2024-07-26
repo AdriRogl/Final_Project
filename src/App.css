@@ -13,7 +13,7 @@
   width: 75%;
   height: 70vh;
   margin: auto;
-  background-color: #888dd7;
+  background-color: rgb(154, 216, 236);
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -46,7 +46,7 @@
 
 .iniciar-sesion,
 .content-button {
-  background-color: beige;
+  background-color: #6bfaa2;
   color: rgb(10, 10, 10);
   border-radius: 20px; /* Ajusta el radio para hacer las puntas muy curvadas */
   padding: 10px 20px;
@@ -55,15 +55,16 @@
 }
 
 .conocenos {
-  background-color: #d8daf0;
+  background-color: #6bfaa2;
   color: rgb(10, 10, 10);
   border-radius: 20px; /* Ajusta el radio para hacer las puntas muy curvadas */
   padding: 10px 20px;
   border-color: azure;
+  margin-left: 10px;
 }
 
-.contactanos {
-  background-color: #d8daf0;
+.inicio {
+  background-color: #6bfaa2;
   color: rgb(10, 10, 10);
   border-radius: 20px; /* Ajusta el radio para hacer las puntas muy curvadas */
   border-color: azure;
@@ -72,8 +73,8 @@
 }
 
 .conocenos,
-.contactanos,
+.inicio,
 .iniciar-sesion {
-  font-weight: bold; /* Aplicar negrita */
-  font-size: 16px; /* Aumentar tamaño de fuente */
+  font-weight: bold;
+  font-size: 16px; /* tamaño de fuente */
 }
