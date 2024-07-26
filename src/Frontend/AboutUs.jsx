@@ -14,17 +14,17 @@ const AboutUs = () => {
       </p>
       <div className="team">
         <div className="member">
-          <img src="Images/Adri.jpeg" />
+          <img src="../src/Frontend/Images/Adri.jpeg" />
           <h3>Adriana Rogel </h3>
           <p>Encargada de las conexiones de las interfaces de la página</p>
         </div>
         <div className="member">
-          <img src="Images/Mateo.jpeg" />
+          <img src="../src/Frontend/Images/Mateo.jpeg" />
           <h3>Mateo Saenz</h3>
           <p>Encargado del diseño responsive y estética de la página.</p>
         </div>
         <div className="member">
-          <img src="Images/Joss.jpeg" />
+          <img src="../src/Frontend/Images/Joss.jpeg" />
           <h3>Josselyn Simbaña</h3>
           <p>Encargada del diseño del juego y estética de la página</p>
         </div>

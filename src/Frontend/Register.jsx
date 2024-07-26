@@ -38,7 +38,11 @@ const Register = () => {
           </p>
         </div>
         <div className="imagen">
-          <img src="./Images/reg.jpg" alt="Hug" className="register-image" />
+          <img
+            src="../src/Frontend//Images/reg.jpg"
+            alt="Hug"
+            className="register-image"
+          />
         </div>
       </div>
       <div className="register-form-container">
