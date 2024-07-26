@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./register.css";
 
 const Register = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     nickname: "",
     birthdate: "",
@@ -16,21 +18,15 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); // Manejar el envío del formulario aquí
+    console.log(formData); // Se maneja el envío del formulario
   };
 
   const handleCancel = () => {
-    setFormData({
-      nickname: "",
-      birthdate: "",
-      email: "",
-      password: "",
-    });
+    navigate(-1); // Navega hacia atrás en el historial
   };
 
   return (
     <div className="register-container">
-      
       <div className="register-content">
         <header className="register-header">
           <h1>Registro</h1>
@@ -42,7 +38,7 @@ const Register = () => {
           </p>
         </div>
         <div className="imagen">
-         <img src="./Images/reg.jpg" alt="Hug" className="register-image" />
+          <img src="./Images/reg.jpg" alt="Hug" className="register-image" />
         </div>
       </div>
       <div className="register-form-container">
@@ -90,7 +86,7 @@ const Register = () => {
             <button
               type="button"
               className="register-form-button"
-              onClick={handleCancel}
+              onClick={() => navigate("/")}
             >
               Cancelar
             </button>
