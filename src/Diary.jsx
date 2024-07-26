@@ -26,7 +26,7 @@ const Diary = () => {
   };
 
   const handleGameClick = () => {
-    navigate("/game");
+    navigate("/game"); //Se implementa una función para que llame a nuestra interfaz de juego
   };
 
   const generateChatResponse = (userInput) => {
@@ -43,7 +43,9 @@ const Diary = () => {
       return "Entiendo. Cuéntame más sobre lo que te está sucediendo y veré cómo puedo asistirte.";
     }
   };
-
+  const handleBackClick = () => {
+    navigate(-1); // Navega hacia atrás en el historial
+  };
   return (
     <div className="diary-container">
       <div className="left-section">
@@ -60,9 +62,9 @@ const Diary = () => {
         </div>
         <div className="game-box">
           <img
-            src="./Images/cards.jpg"
+            src="./Images/card.png"
             className="game-image"
-            onClick={handleGameClick}
+            onClick={handleGameClick} //Al dar click se desplegará nuestra interfaz game
           />
         </div>
       </div>
@@ -94,31 +96,40 @@ const Diary = () => {
           <h3>Calendario</h3>
           <img src="./Images/Calendar.jpeg" alt="Feliz"></img>
           <p>Fecha actual: {new Date().toLocaleDateString()}</p>
-        </div>
-        <div className="emotion-box">
-          <h3>Emoción del día</h3>
+          <div className="emotion-calendar">
+            {selectedEmotion && (
+              <img
+                src={`./Images/${selectedEmotion}.jpeg`}
+                alt={selectedEmotion}
+                className="calendar-emotion"
+              />
+            )}
+          </div>
           <div className="emotion-icons">
             <img
-              src="./Images/happy.jpeg"
+              src="./Images/Happy.jpeg"
               alt="Feliz"
-              className={selectedEmotion === "happy" ? "selected-emotion" : ""}
-              onClick={() => handleEmotion("happy")}
+              className={selectedEmotion === "Happy" ? "selected-emotion" : ""}
+              onClick={() => handleEmotion("Happy")}
             />
             <img
-              src="./Images/sad.jpeg"
+              src="./Images/Sad.jpeg"
               alt="Triste"
-              className={selectedEmotion === "sad" ? "selected-emotion" : ""}
-              onClick={() => handleEmotion("sad")}
+              className={selectedEmotion === "Sad" ? "selected-emotion" : ""}
+              onClick={() => handleEmotion("Sad")}
             />
             <img
-              src="./Images/angry.jpeg"
+              src="./Images/Angry.jpeg"
               alt="Enojado"
-              className={selectedEmotion === "angry" ? "selected-emotion" : ""}
-              onClick={() => handleEmotion("angry")}
+              className={selectedEmotion === "Angry" ? "selected-emotion" : ""}
+              onClick={() => handleEmotion("Angry")}
             />
           </div>
         </div>
       </div>
+      <button onClick={handleBackClick} className="back-button">
+        Volver
+      </button>
     </div>
   );
 };
