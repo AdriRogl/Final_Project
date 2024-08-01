@@ -27,7 +27,7 @@ const Game = () => {
   const [confetti, setConfetti] = useState([]);
   const [showImage, setShowImage] = useState(true); // Estado para controlar la visibilidad de la imagen de fondo
   const [backImage, setBackImage] = useState(
-    "url('../src/Frontend/Images/card.png')"
+    "url('../public/Images/card.png')"
   ); // Ruta a la imagen de fondo
   const [Loser, setLoser] = useState(false);
 

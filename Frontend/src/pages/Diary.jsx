@@ -51,7 +51,7 @@ const Diary = () => {
       <div className="left-section">
         <div className="journal-box">
           <img
-            src="../src/Frontend/Images/diario (2).jpg"
+            src="../public/Images/diario (2).jpg"
             alt="Diario"
             className="journal-image"
           />
@@ -62,7 +62,7 @@ const Diary = () => {
         </div>
         <div className="game-box">
           <img
-            src="../src/Frontend/Images/card.png"
+            src="../public/Images/card.png"
             className="game-image"
             onClick={handleGameClick} //Al dar click se desplegará nuestra interfaz game
           />
@@ -94,12 +94,12 @@ const Diary = () => {
       <div className="right-section">
         <div className="calendar-box">
           <h3>Calendario</h3>
-          <img src="../src/Frontend/Images/Calendar.jpeg" alt="Feliz"></img>
+          <img src="../public/Images/Calendar.jpeg" alt="Feliz"></img>
           <p>Fecha actual: {new Date().toLocaleDateString()}</p>
           <div className="emotion-calendar">
             {selectedEmotion && (
               <img
-                src={`../src/Frontend/Images/${selectedEmotion}.jpeg`}
+                src={`../public/Images/${selectedEmotion}.jpeg`}
                 alt={selectedEmotion}
                 className="calendar-emotion"
               />
@@ -107,19 +107,19 @@ const Diary = () => {
           </div>
           <div className="emotion-icons">
             <img
-              src="../src/Frontend/Images/Happy.jpeg"
+              src="../public/Images/Happy.jpeg"
               alt="Feliz"
               className={selectedEmotion === "Happy" ? "selected-emotion" : ""}
               onClick={() => handleEmotion("Happy")}
             />
             <img
-              src="../src/Frontend/Images/Sad.jpeg"
+              src="../public/Images/Sad.jpeg"
               alt="Triste"
               className={selectedEmotion === "Sad" ? "selected-emotion" : ""}
               onClick={() => handleEmotion("Sad")}
             />
             <img
-              src="../src/Frontend/Images/Angry.jpeg"
+              src="../public/Images/Angry.jpeg"
               alt="Enojado"
               className={selectedEmotion === "Angry" ? "selected-emotion" : ""}
               onClick={() => handleEmotion("Angry")}

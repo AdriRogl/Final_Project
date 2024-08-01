@@ -39,7 +39,7 @@ const Register = () => {
         </div>
         <div className="imagen">
           <img
-            src="../src/Frontend//Images/reg.jpg"
+            src="../public/Images/reg.jpg"
             alt="Hug"
             className="register-image"
           />

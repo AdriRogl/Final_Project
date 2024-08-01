@@ -36,7 +36,7 @@ const Login = () => {
         <h1>Bienvenido</h1>
       </header>
       <img
-        src="../src/Frontend/Images/Peace.jpeg"
+        src="../public/Images/Peace.jpeg"
         alt="Bienvenidos"
         className="login-image"
       />
