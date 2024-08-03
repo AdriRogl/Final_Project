@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./game.css"; // Estilos CSS
+import "../styles/game.css"; // Estilos CSS
 
 const Game = () => {
   const navigate = useNavigate();

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./fpassword.css"; // Archivo CSS para estilos
+import "../styles/fpassword.css"; // Archivo CSS para estilos
 
 const Fpassword = () => {
   const [email, setEmail] = useState("");

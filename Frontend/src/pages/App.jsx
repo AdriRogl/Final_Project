@@ -11,7 +11,7 @@ import Diary from "./Diary";
 import Game from "./Game";
 import Fpassword from "./Fpassword";
 import AboutUs from "./AboutUs";
-import "./App.css";
+import "../styles/App.css";
 
 const App = () => {
   const navigate = useNavigate();
