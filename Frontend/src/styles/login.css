@@ -100,3 +100,53 @@
 .forgot-password:hover {
   text-decoration: underline;
 }
+/* Media Queries para hacer responsive */
+@media (min-width: 768px) {
+  .login-container {
+    max-width: 700px; /* Aumentar el ancho máximo en tablets */
+    height: auto;
+    padding: 2rem;
+  }
+
+  .login-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .login-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .login-form {
+    padding: 2rem;
+  }
+
+  .login-options {
+    flex-direction: row; /* Alinear en fila */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Fpassword {
+    margin-top: 0; /* Eliminar margen superior */
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-container {
+    max-width: 800px; /* Aumentar aún más el ancho máximo */
+  }
+
+  .login-header h1 {
+    font-size: 3rem;
+  }
+
+  .login-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .login-form {
+    padding: 2.5rem;
+  }
+}

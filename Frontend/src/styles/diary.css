@@ -128,3 +128,61 @@
 .back-button:hover {
   background-color: #0056b3;
 }
+/* Media Queries para diseño responsive */
+@media (max-width: 1024px) {
+  .left-section,
+  .right-section {
+    width: 20%;
+  }
+  
+  .center-section {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .diary-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .center-section {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .journal-image,
+  .game-image {
+    width: 70%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-section,
+  .right-section {
+    padding: 5px;
+  }
+
+  .center-section {
+    padding: 5px;
+  }
+  
+  .journal-textarea,
+  .user-input {
+    height: 100px;
+    padding: 5px;
+  }
+  
+  .submit-button,
+  .back-button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}

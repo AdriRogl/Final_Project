@@ -68,6 +68,7 @@ para el contenedor principal de registro */
   display: flex;
   justify-content: space-between; /* Espaciado entre botones */
   margin-top: 1rem; /* Margen superior */
+  align-items: center;
 }
 
 .register-form-button {
@@ -92,4 +93,36 @@ para el contenedor principal de registro */
   font-family: "Poppins", sans-serif;
   width: 80%;
   text-align: center;
+}
+ /*Para hacerlo responsive*/
+ @media  (min-width: 768px){
+  .register-container{
+    flex-direction: row;
+    height: auto;
+    margin-left: 10%;
+  }
+  
+  
+  .register-form-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .register-form-button {
+    width: 48%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .register-container {
+    max-width: 60%;
+    margin: 2rem auto;
+  }
+
+  .register-form-container {
+    width: 100%;
+    padding: 40px;
+  }
 }

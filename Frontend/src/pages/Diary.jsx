@@ -94,7 +94,7 @@ const Diary = () => {
       <div className="right-section">
         <div className="calendar-box">
           <h3>Calendario</h3>
-          <img src="../public/Images/Calendar.jpeg" alt="Feliz"></img>
+          <img src=".../Images/Happy.jpeg" alt="Feliz"></img>
           <p>Fecha actual: {new Date().toLocaleDateString()}</p>
           <div className="emotion-calendar">
             {selectedEmotion && (
@@ -107,7 +107,7 @@ const Diary = () => {
           </div>
           <div className="emotion-icons">
             <img
-              src="../public/Images/Happy.jpeg"
+              src="../Images/Happy.jpeg"
               alt="Feliz"
               className={selectedEmotion === "Happy" ? "selected-emotion" : ""}
               onClick={() => handleEmotion("Happy")}

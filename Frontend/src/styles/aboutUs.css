@@ -41,3 +41,47 @@
     73
   ); /* Cambia el color cuando se pasa el cursor sobre el botón */
 }
+/* Media Queries para diseño responsive */
+@media (max-width: 1024px) {
+  .team {
+    margin-top: 50px; /* Reduce el margen superior en pantallas medianas */
+  }
+
+  .member {
+    margin: 10px 5px; /* Reduce el margen en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column; /* Cambia la dirección de flexión a columna en pantallas pequeñas */
+    margin-top: 20px; /* Reduce el margen superior en pantallas pequeñas */
+  }
+
+  .member {
+    margin: 10px 0; /* Reduce el margen en pantallas pequeñas */
+    width: 90%; /* Ajusta el ancho de los miembros en pantallas pequeñas */
+    min-height: auto; /* Ajusta la altura mínima en pantallas pequeñas */
+  }
+
+  .member img {
+    width: 120px; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
+    height: 120px; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .member {
+    margin: 10px 0; /* Ajusta el margen en pantallas extra pequeñas */
+    width: 100%; /* Asegura que el ancho de los miembros ocupe el 100% en pantallas extra pequeñas */
+  }
+
+  .member img {
+    width: 100px; /* Reduce aún más el tamaño de las imágenes en pantallas extra pequeñas */
+    height: 100px; /* Reduce aún más el tamaño de las imágenes en pantallas extra pequeñas */
+  }
+
+  .back-button {
+    width: 100%; /* Ajusta el ancho del botón para ocupar todo el ancho en pantallas extra pequeñas */
+  }
+}

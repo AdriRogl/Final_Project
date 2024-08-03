@@ -119,3 +119,59 @@
     transform: translateY(100vh);
   }
 }
+
+@media (max-width: 1024px) {
+  #gameContainer {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    width: 400px; /* Ancho ajustado */
+    height: 400px; /* Altura ajustada */
+  }
+
+  .card {
+    width: 80px; /* Ajusta el tamaño de las cartas */
+    height: 80px; /* Ajusta el tamaño de las cartas */
+  }
+}
+
+@media (max-width: 768px) {
+  #gameContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    width: 300px; /* Ancho ajustado */
+    height: 300px; /* Altura ajustada */
+  }
+
+  .card {
+    width: 70px; /* Ajusta el tamaño de las cartas */
+    height: 70px; /* Ajusta el tamaño de las cartas */
+  }
+
+  .message {
+    font-size: 1.5rem; /* Ajuste del tamaño del texto */
+  }
+}
+
+@media (max-width: 480px) {
+  #gameContainer {
+    grid-template-columns: repeat(1, 1fr); /* 1 columna */
+    width: 200px; /* Ancho ajustado */
+    height: auto; /* Altura ajustada */
+  }
+
+  .card {
+    width: 100px; /* Ajusta el tamaño de las cartas */
+    height: 100px; /* Ajusta el tamaño de las cartas */
+  }
+
+  .counters {
+    font-size: 1.2rem; /* Ajuste del tamaño del texto */
+  }
+
+  .message {
+    font-size: 1.2rem; /* Ajuste del tamaño del texto */
+    top: 10%; /* Ajuste de la posición */
+  }
+
+  .button {
+    width: 100%; /* Botones de ancho completo */
+  }
+}
